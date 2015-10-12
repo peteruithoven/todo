@@ -9,10 +9,8 @@ export default class Input extends React.Component {
     placeholder: ''
   }
   handleSubmit = (e) => {
-    console.log('handleSubmit');
     e.preventDefault();
     let text = this.refs.text.value.trim();
-    console.log('  text: ', text);
     if (!text) return;
     this.props.onSubmit(text);
     this.refs.text.value = '';
