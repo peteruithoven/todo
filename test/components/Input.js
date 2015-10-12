@@ -42,9 +42,6 @@ test(COMPONENT+' with placeholder', (assert) => {
   })
 })
 test(COMPONENT+' when submitted with text', (assert) => {
-  // const handleSubmit = Sinon.spy();
-  // Test(<Input onSubmit={handleSubmit} />)
-  // .find('input')
   const {input, submitHandler} = setup();
   input.find('input')
   .element((inputs) => {
@@ -60,9 +57,6 @@ test(COMPONENT+' when submitted with text', (assert) => {
   })
 });
 test(COMPONENT+' when submitted without text', (assert) => {
-  // const handleSubmit = Sinon.spy();
-  // Test(<Input onSubmit={handleSubmit} />)
-  // .find('form')
   const {input, submitHandler} = setup();
   input.find('form')
   .simulate({method: 'submit', element: 'form'})
