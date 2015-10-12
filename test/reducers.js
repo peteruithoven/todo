@@ -11,7 +11,7 @@ test('rootReducer initial state', (assert) => {
 
 test('rootReducer when given ADD_TODO action', (assert) => {
 	const actual = rootReducer([], actions.addTodo('dishes', false));
-	const expected = [{text: 'dishes', completed: false}];
+	const expected = [{id: 0, text: 'dishes', completed: false}];
 	assert.deepEqual(actual, expected, 'should add a todo item');
 	assert.end();
 })

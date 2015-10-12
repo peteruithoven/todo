@@ -9,10 +9,12 @@ const COMPONENT = 'ToDoList > ';
 const defaultData = [
   {
     text: 'Dishes',
+    id: 0
   },
   {
     text: 'Wash',
-    completed: true
+    completed: true,
+    id: 1
   },
 ]
 

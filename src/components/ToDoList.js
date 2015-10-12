@@ -13,10 +13,14 @@ export default class ToDoList extends React.Component {
   }
   render () {
     const {todos} = this.props;
+    
     return (
       <div>
         {todos.map((todo) => {
-          return <ToDoItem text={todo.text} completed={todo.completed} />
+          return <ToDoItem 
+                  text={todo.text} 
+                  completed={todo.completed} 
+                  key={todo.id} />
         })}
       </div>
     );
